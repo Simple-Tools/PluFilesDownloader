@@ -1,0 +1,10 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Style x:Key="BtnStyle" TargetType="Button">
+        <Setter Property="FontSize" Value="14" />
+        <Setter Property="FontWeight" Value="Normal"/>
+        <Setter Property="Foreground" Value="#FF079AEE"  />
+        <Setter Property="BorderBrush" Value="#FF079AEE"  />
+        <Setter Property="Background" Value="{x:Null}" />
+    </Style>
+</ResourceDictionary>

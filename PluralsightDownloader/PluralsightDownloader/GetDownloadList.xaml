@@ -1,0 +1,22 @@
+﻿<Page x:Class="PluralsightDownloader.GetDownloadList"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+      d:DesignHeight="400" d:DesignWidth="620"
+	Title="GetDownloadList">
+
+    <Grid>
+        <ScrollViewer ClipToBounds="True">
+        <StackPanel Width="580" VerticalAlignment="Top">
+            <TextBox x:Name="DownloadTextBox" Visibility="Visible" Height="150" Margin="0,50,0,0" TextWrapping="Wrap" MaxLines="50" AcceptsReturn="True" Text="" Foreground="DarkGray" BorderBrush="#FF18AAFD" FontSize="16" />
+            <DataGrid x:Name="DownloadDataGrid" Visibility="Collapsed" Width="580" Margin="0,50,0,0" VerticalAlignment="Top" CanUserResizeColumns="False"  SelectionMode="Single" MinColumnWidth="80" MaxColumnWidth="200"/>
+            <StackPanel Width="580" HorizontalAlignment="Stretch" Margin="0,20" Orientation="Horizontal">
+            <TextBlock x:Name="InfoTextBlock" Width="480" HorizontalAlignment="Left" Foreground="#FF18AAFD" FontSize="14" FontFamily="Microsoft YaHei"/>
+            <Button x:Name="DownloadButton"   Width="100" HorizontalAlignment="Right"  Content="创建目录" Style="{StaticResource BtnStyle}" Height="30" Click="Button_Click"/>
+            </StackPanel>
+        </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</Page>
